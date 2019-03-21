@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>SVG vjezba</title>
+			<meta charset="utf-8">
+			<meta name="description" content="SVG and tables task">
+			<meta name="author" content="Mirjam Regina Ozretić">
+			<link rel="stylesheet" type="text/css" href="OzreticMirjamRegina_lab3.css" />
+	</head>
+	<body>
+	<svg width="160" height="270">
+		<circle id="Zabrana_parkiranja" cx="80" cy="80" r="60" stroke="red" stroke-width="8" fill="blue"/>
+		<line x1="35" y1="35" x2="125" y2="125" stroke="red" stroke-width="8"/>
+	</svg>
+	<svg width="160" height="270">
+		<rect x="40" y="0" width="100" height="100" stroke="black" stroke-width="1" fill="white" transform="rotate(45,60,60)"/>
+		<rect x="60" y="20" width="60" height="60" stroke="black" stroke-width="1" fill="yellow" transform="rotate(45,60,60)"/>
+	</svg>
+	<svg width="200" height="270">
+	<circle id="Sunce" cx="80" cy="80" r="80"  fill="url(#grad)"/>
+	<polygon points="66,259,66,176,116,125,167,176,167,259", stroke="RGB(131,81,54)" stroke-width=6 fill="RGB(155,102,67)"/>
+	<defs>
+		<radialGradient id="grad">
+			<stop offset="30%" stop-color="yellow"/>
+			<stop offset="100%" stop-color="white"/>
+		</radialGradient>
+	</defs>
+	</svg>
+	<svg width="200" height="270">
+		<rect x="20" y="20" width="150" height="100" fill="red"/>
+		<polygon points="70,40,70,100,120,70" fill="white"/>
+	</svg>
+	
+	<center>
+	<table id="raspored">
+	<caption>Raspored sati za IT red 2. semestar ak. g. 2018./2019.</caption>
+	<th>Sati</th>
+	<th>Ponedjeljak</th>
+	<th>Utorak</th>
+	<th>Srijeda</th>
+	<th>Cetvrtak</th>
+	<th>Petak</th>
+	<th>Subota</th>
+	<th>Nedjelja</th>
+	<tr>
+		<td>08:15-09:00</td>
+		<td rowspan="2" id="dem">Demonstrature PMA</td>
+		<td rowspan="3" id="dem">Demonstrature OS</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>09:15-10:00</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>10:15-11:00</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>11:15-12:00</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>12:15-13:00</td>
+		<td rowspan="2" id="lab">MUIP lab vjezbe</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>13:15-14:00</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>14:15-15:00</td>
+		<td></td>
+		<td rowspan="2" id="aud">DM aud vjezbe</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>15:15-16:00</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>16:15-17:00</td>
+		<td></td>
+		<td rowspan="3" id="pred">MUIP predavanja</td>
+		<td rowspan="3" id="pred">DM predavanja</td>
+		<td rowspan="3" id="pred">PIUM predavanja</td>
+		<td rowspan="3" id="pred">BP2 predavanja</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>17:15-18:00</td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>18:15-19:00</td>
+		<td rowspan="2" id="lab">OOP lab vjezbe</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>19:15-20:00</td>
+		<td></td>
+		<td></td>
+		<td rowspan="3" id="pred">OP predavanja</td>
+		<td id="lab">PIUM lab vjezbe</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>20:15-21:00</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td rowspan="2" id="lab">BP2 lab vjezbe</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>21:00-21:30</td>
+		<td id="other">Ples</td>
+		<td></td>
+		<td id="other">Ples</td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+	
+	</table>
+	</center>	
+	</body>

@@ -1,0 +1,14 @@
+body {
+	font-family:"Times New Roman",serif; 
+	font_size:100%;
+	font-style:oblique;
+	font-stretch:wider;
+	color:white;
+	background-image:url("background.jpg");
+	background-position:top left;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+#smjer {
+	color:RGB(0,0,255);
+}
