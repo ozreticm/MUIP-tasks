@@ -1,0 +1,54 @@
+body{
+	background-color:black;
+	text-align:center;
+	color:white;
+}
+
+nav{
+	
+	background-color:#3a3c3e;
+	height:23px;
+}
+
+#logo {
+	float:left;
+	width:100px;
+	height:100px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#naslov {
+	width:800px;
+	height:100px;
+}
+#main {
+	width:1000px;
+	height:500px;
+}
+.triStupca {
+	float:left;
+	width:31%;
+	padding:10px;
+	text-align:center;
+}
+ul {
+	padding:2px;
+	margin:0px;
+}
+ul li{
+	float:left;
+	list-style-type:none;
+	width:80px;	
+	padding-left:20px;
+}
+ul li a:link, a:visited{
+	color:white;
+	text-decoration:none;
+}
+ul li a:hover{
+	background-color:blue;
+}

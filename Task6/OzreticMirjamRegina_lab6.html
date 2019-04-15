@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First js task</title>
+	<meta charset="utf-8">
+	<meta name="Description" content="First js task for college">
+	<meta name="author" content="Mirjam Regina Ozretić">
+	<link rel="stylesheet" type="text/css" href="OzreticMirjamRegina_lab6.css">
+	<link rel="script" type="text/js" href="OzreticMirjamRegina_lab6.js">
+</head>
+<body>
+	<script>
+	var sumN2=0;
+	var sumN1=0;
+	var i,n;
+	for(i=50;i>=10;i--)
+	{
+		((i%5)==0 && (i%2)==0)?n=1:n=2;
+		switch(n)
+		{
+			case 1:
+				sumN1=sumN1+i;
+				break;
+			case 2:
+				console.log("Broj ",i," nije djeljiv i sa 5 i sa 2");
+				break;
+		}
+	}
+	console.log("Zbroj je ",sumN1);
+	i=50;
+	while(i>9)
+	{
+		((i%5)==0 && (i%2)==0)?n=1:n=2;
+		switch(n)
+		{
+			case 1:
+				sumN2=sumN2+i;
+				break;
+			case 2:
+				console.log("Broj ",i," nije djeljiv i sa 5 i sa 2");
+				break;
+		}
+		i--;
+	}
+	console.log("Zbroj je ",sumN2);
+	
+	var smijer="RIF"
+	
+	switch(smijer)
+	{
+		case "IT":
+			console.log("Informacijska tehnologija");
+			break;
+		case "RIF":
+			console.log("Racunovodstvo i financije");
+			break;
+		case "TP":
+			console.log("Trgovinsko poslovanje");
+			break;
+		case "KS":
+			console.log("Konstrukcijsko strojarstvo");
+			break;
+		default:
+			console.log("Neispravno unesena kratica");
+			break;
+	}
+	
+	var opseg = function(a, b, c){
+	return a+b+c;
+	};
+	console.log(opseg(4,2,6));
+	
+	
+	</script>
+</body>

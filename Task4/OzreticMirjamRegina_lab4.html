@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ljekarna Lukačin</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Vjezba iz MUIP, izrada sucelja za registraciju u web shop>
+		<meta name="author" content="Mirjam Regina Ozretić">
+		<link rel="stylesheet" type="text/css" href="OzreticMirjamRegina_lab4.css">
+	</head>
+	<body>
+		<h1> Ljekarna Lukačin</h1><br/>
+		<fieldset>
+			<legend>Registracija novih korisnika</legend>
+			<fieldset>
+				<legend>Osobni podatci</legend>
+				<label for="ime">Ime:</label><input type="text" name="ime" placeholder="Upišite Vaše ime"/><br/>
+				<label for="prezime">Prezime:</label><input type="text" name="prezime" placeholder="Upišite Vaše prezime"/><br/>
+				<label for="adresa">Adresa:</label><textarea name="adresa" rows="2" cols="30" placeholder="Upišite Vašu adresu"/></textarea><br/>
+				<label for="grad">Grad:</label><input type="text" name="grad" placeholder="Upišite ime grada u kojem stanujete"/><br/>
+				<label for="postanskiBroj">Poštanski broj:</label><input type="number" name="postanskiBroj" placeholder="Upišite poštanski broj" min="10000" max="53296"/><br/>
+				<label for="datumRodenja">Datum rođenja:</label><input type="datetime-local" name="datumRodenja" placeholder="Upišite datum rođenja"/><br/>
+				<label for="mobitel">Broj mobitela:</label><input type="tel" name="mobitel" placeholder="Upišite broj mobitela"/></br>
+				<label for="e-mail">Email:</label><input type="email" name="e-mail" placeholder="Upišite Vašu email adresu"/><br/>
+				<label for="lozinka">Lozinka:</label><input type="password" name="lozinka" placeholder="Unesite lozinku"/><br/>
+			</fieldset>
+			<fieldset>
+				<legend>Vaše želje!</legend>
+				<label for="kontakt1">Želite li da Vas obaviještavamo o popustima i novim proizvodima?</label>
+				<input type="radio" name="kontakt1" value="DA!"/>DA!
+				<input type="radio" name="kontakt1" value="Ne, hvala!"/>Ne, hvala!<br/>
+				<label for="kontakt2">Na koji način da Vas kontaktiramo?</label>
+				<input type="checkbox" name="kontakt2" value="telefon"/>Telefon
+				<input type="checkbox" name="kontakt2" value="email"/>Email
+				<input type="checkbox" name="kontakt2" value="posta"/>Pošta<br/>
+				<label for="kategorije">Koje Vas kategorije proizvoda najviše zanimaju?</label>
+				<select name="kategorije">
+					<option value="samolijecenje">Samoliječenje</option>
+					<option value="zdravljeINjega">Zdravlje i njega</option>
+					<option value="dodatciPrehrani">Dadatci prehrani</option>
+					<option value="kozmetika">Kozmetika</option>
+					<option value="kucnaDijagnostika">Kućna dijagnostika</option>
+					<option value="djecjiKutak">Dječji kutak</option>
+					<option value="posebnaPrehrana">Posebna prehrana</option>
+					<option value="anatomskaObuca">Anatomska obuća</option>
+				</select> 
+				<label for="savjet">Želite li primati besplatne savjete naših stručnjaka?</label>
+				<input type="radio" name="savjet" value="Da"/>Da
+				<input type="radio" name="savjet" value="ne"/>Ne<br/>
+				<label for="odjel">S kojeg odjela želite primati savjete?</label>
+				<select name="odjel">
+					<option value="dermatologija">Dermatologija</option>
+					<option value="gastronterologija">Gastroenterologija</option>
+					<option value="urologija">Urologija</option>
+					<option value="ginekologija">Ginekologija</option>
+					<option value="otorinolaringologija">Otorinolaringologija</option>
+					<option value="ortopedija">Ortopedija</option>
+				</select>
+			</fieldset>
+			
+				<input type="submit"value="Pošalji"/> 
+		</fieldset>
+	</body>
