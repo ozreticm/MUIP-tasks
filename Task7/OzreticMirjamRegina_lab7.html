@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second JS task</title>
+	<meta charset="utf8">
+	<meta name="description" content="Functions in JS">
+	<meta name="author" content="Mirjam Regina Ozretic">
+	<link rel="stylesheet" type="text/css" href="OzreticMirjamRegina_lab7.css">
+</head>
+<body>
+<script>
+function sumul(x,y)
+{
+	var sum=x+y;
+	var mul=x*y;
+	if(isFinite(sum))
+	console.log("Zbroj " + sum +" je konacan broj");
+	if(isFinite(mul))
+	console.log("Umnozak " + mul +" je konacan broj");
+	return [sum,mul];
+}
+
+
+function action(callback,x,y)
+{
+	console.log(callback(x,y));
+}
+function sum(x,y) {return x+y;}
+function prod(x,y) {return x*y;}
+function div(x,y) {return x/y;}
+function nezz(x,y) {return x-y;}
+
+
+function closureTest(x){
+	function name(name){
+		return x+ " " + name +"!";
+	}
+	return name;
+}
+var x = parseInt(prompt("Unesite 1. broj"));
+var y = parseInt(prompt("Unesite 2. broj"));
+[a,b]=sumul(x,y);
+console.log("Suma je " + a + " a umnozak je " + b);
+
+
+var task =prompt("Unesite aritmeticki znak");
+switch(task)
+{
+	case '+':
+		action(sum,x,y);
+		break;
+	case '-':
+		action(nezz,x,y);
+		break;
+	case '/':
+		action(div,x,y);
+		break;
+	case '*':
+		action(prod,x,y);
+		break;
+	default:
+		console.log("Neispravan unos");
+		break;
+}
+
+
+var hello=closureTest(prompt("Unesite pozdrav!"));
+var name=prompt("Unesite ime!");
+console.log(hello(name));
+</script>
+
+</body>
