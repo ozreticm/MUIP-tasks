@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS task 3</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Mirjam Regina ozretić">
+    <meta name="description" content="JS task 3">
+</head>
+<body>
+<script>
+    var a = 6;
+    var b = 8;
+    var c = (a, b) => {
+        var kvadrat = (a) => { return a * a;}
+        var korijen = (a) => { return Math.sqrt(a); }
+        return (korijen(kvadrat(a) + kvadrat(b)));
+    };
+
+    console.log(c(a, b));
+
+    let pozdrav = (por1) => (por2) => (por3) => por1 + por2 + por3;
+    const poruka = pozdrav("Kolegij i ects bodovi: ");
+
+    console.log(`${poruka("MUP")("6")}`);
+
+    const arr1 = Array.from({length: 20}, () => Math.floor(10 + Math.random() * 90));
+    console.log(arr1);
+    const arr2 = arr1.filter((el) => el >50 && el < 90);
+    console.log(arr2);
+    const arr3 = arr2.sort();
+    console.log(arr3);
+    const arr4 = arr3.slice(1, -1);
+    console.log(arr4);
+    const sum = arr4.reduce((el, next) => el + next);
+    console.log(sum);
+</script>
+</body>
+</html>
